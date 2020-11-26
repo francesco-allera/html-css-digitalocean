@@ -30,6 +30,10 @@ p {
   color: #b0c5fe;
 }
 
+.text-lightblue {
+  color: #006aff;
+}
+
 /* NAVBAR */
 header > nav {
   height: 66px;
@@ -59,13 +63,11 @@ nav .col-xs-4 ul li {
 
 #nav-burger {
   font-size: 21px;
-  color: #006aff;
 }
 
 #sign-up {
   background-color: transparent;
-  color: #006aff;
-  border: 1px solid #006aff;
+  border: 1px solid;
   line-height: normal;
   padding: 8px 12px;
   border-radius: 5px;
@@ -84,6 +86,7 @@ nav .col-xs-4 ul li {
   padding: 25px 20px 30px;
   background-color: #fff;
   border-radius: 5px;
+  color: #031c4e;
 }
 
 .sign-up-form input, .sign-up-form button {
@@ -103,17 +106,41 @@ nav .col-xs-4 ul li {
 
 .sign-up-form button {
   color: #6b6b6b;
-  background: transparent;
+  background-color: transparent;
   font-size: 15px;
   font-weight: bold;
   border: none;
   box-shadow: 1px 1px 1px #ccc;
+  background-image: url("../img/sign-up.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 2% 50%;
 }
+
+/* .sign-up-form button::before {
+  background-image: url("../img/sign-up.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: left center;
+} */
 
 #logo-ggl {
   height: 20px;
   vertical-align: middle;
 }
+
+.terms-service {
+  color: #031c4e;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.terms-service a {
+  text-decoration: underline;
+}
+
+/*  */
+
 
 
 /* MEDIA QUERY MIN WIDTH 992px */
