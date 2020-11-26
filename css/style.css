@@ -4,6 +4,22 @@
   padding-right: 0;
 }
 
+h1 {
+  font-size: 39px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 22px;
+}
+
+.text-white{
+  color: #fff;
+}
+
+.text-coral {
+  color: #b0c5fe;
+}
 
 /* NAVBAR */
 header > nav {
@@ -46,13 +62,23 @@ nav .col-xs-4 ul li {
   border-radius: 5px;
 }
 
+/* JUMBOTRON */
 #bool-jumbo {
-  height: 1000px;
-  background-color: #aaa;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  background-image: url("../img/sfondo-pesci.svg");
+  background-position: center;
+  background-size: cover;
 }
+
+
 
 /* MEDIA QUERY MIN WIDTH 992px */
 @media screen and (min-width:992px) {
+
+  h1 {
+    font-size: 62px;
+  }
 
   nav {
     width: 100%;
