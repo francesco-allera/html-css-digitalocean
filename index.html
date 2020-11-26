@@ -15,41 +15,56 @@
     <header>
 
       <!-- navbar -->
-      <nav class="bckgr-white">
+      <nav>
         <div class="container">
           <div class="row">
-            <ul class="col-xs-3">
-              <li>
-                <a href="#">
-                  <img id="nav-logo" src="img/digital-ocean-logo.png" alt="logo">
-                </a>
-              </li>
-            </ul>
-            <ul class="col-xs-5">
-              <li>Products</li>
-              <li>Customers</li>
-              <li>Community</li>
-              <li>Pricing</li>
-            </ul>
-            <ul class="col-xs-4 bool-fr">
-              <li>Docs</li>
-              <li>Support</li>
-              <li>Login</li>
-              <li>Sing Up</li>
-            </ul>
+            <div class="col-xs-3">
+              <a href="#">
+                <img id="nav-logo" src="img/digital-ocean-logo.png" alt="logo">
+              </a>
+            </div>
+
+            <!-- hamburger menu visible in xs, sm -->
+            <div class="col-xs-1 col-xs-offset-8 hidden-md hidden-lg">
+              <a href="#">
+                <i id="nav-burger" class="fa fa-bars" aria-hidden="true"></i>
+              </a>
+            </div>
+            <!-- /hamburger menu visible in xs, sm -->
+
+            <!-- ul visible in md, lg -->
+            <div class="col-xs-5 hidden-xs hidden-sm">
+              <ul class="nopadd text-capitalize">
+                <li>products</li>
+                <li>customers</li>
+                <li>community</li>
+                <li>pricing</li>
+              </ul>
+            </div>
+            <div class="col-xs-4 hidden-xs hidden-sm">
+              <ul class="nopadd text-right text-capitalize">
+                <li>docs</li>
+                <li>support</li>
+                <li>login</li>
+                <li><button id="sign-up" type="button" name="button">Sign Up</button></li>
+              </ul>
+            </div>
+            <!-- ul visible in md, lg -->
           </div>
         </div>
       </nav>
       <!-- /navbar -->
 
       <!-- jumbotron -->
-      <div class="bool-jumbo">
+      <div id="bool-jumbo">
 
       </div>
       <!-- /jumbotron -->
 
+
     </header>
-    <!-- /header -->
+    <!-- /header e tuttecose -->
+
 
   </body>
 </html>

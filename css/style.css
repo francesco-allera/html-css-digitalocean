@@ -1,42 +1,55 @@
 /* COMMON SETTINGS AND UTILITIES */
-.bool-container {
-  padding: 0;
-  margin: 0 auto;
+.nopadd {
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.bckgr-white {
-  background-color: #fff;
-}
-
-ul.bool-fr > li {
-  float: right;
-}
 
 /* NAVBAR */
-nav {
+header > nav {
   height: 66px;
+  background-color: #fff;
   line-height: 66px;
+  vertical-align: middle;
 }
 
-nav li {
+nav ul li {
   display: inline-block;
+  font-size: 15px;
+  color: #031c4e;
+  font-weight: bold;
+}
+
+nav .col-xs-5 ul li {
+  margin-right: 15px;
+}
+
+nav .col-xs-4 ul li {
+  margin-left: 15px;
 }
 
 #nav-logo {
   height: 28px;
-  vertical-align: middle;
 }
 
-
-/* JUMBOTRON */
-.bool-jumbo {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-image: url("../img/sfondo-pesci.svg");
-  background-position: center;
-  background-size: cover;
+#nav-burger {
+  font-size: 21px;
+  color: #006aff;
 }
 
+#sign-up {
+  background-color: transparent;
+  color: #006aff;
+  border: 1px solid #006aff;
+  line-height: normal;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+#bool-jumbo {
+  height: 1000px;
+  background-color: #aaa;
+}
 
 /* MEDIA QUERY MIN WIDTH 992px */
 @media screen and (min-width:992px) {
@@ -49,7 +62,7 @@ nav li {
     margin: 0 auto;
   }
 
-  .bool-jumbo {
+  #bool-jumbo {
     margin-top: 66px;
   }
 
