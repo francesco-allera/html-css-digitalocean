@@ -9,6 +9,11 @@ h1 {
   font-weight: bold;
 }
 
+h3 {
+  font-size: 29px;
+  font-weight: bold;
+}
+
 p {
   font-size: 22px;
 }
@@ -71,6 +76,26 @@ nav .col-xs-4 ul li {
   background-size: cover;
 }
 
+.sign-up-form {
+  padding: 25px 20px 30px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.sign-up-form input {
+  width: 100%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+#create-account {
+  color: #fff;
+  background-color: #579aff;
+  font-size: 15px;
+  border: none;
+}
 
 
 /* MEDIA QUERY MIN WIDTH 992px */
