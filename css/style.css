@@ -4,6 +4,10 @@
   padding-right: 0;
 }
 
+.mb-20 {
+  margin-bottom: 20px;
+}
+
 h1 {
   font-size: 39px;
   font-weight: bold;
@@ -82,7 +86,7 @@ nav .col-xs-4 ul li {
   border-radius: 5px;
 }
 
-.sign-up-form input {
+.sign-up-form input, .sign-up-form button {
   width: 100%;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -95,6 +99,20 @@ nav .col-xs-4 ul li {
   background-color: #579aff;
   font-size: 15px;
   border: none;
+}
+
+.sign-up-form button {
+  color: #6b6b6b;
+  background: transparent;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  box-shadow: 1px 1px 1px #ccc;
+}
+
+#logo-ggl {
+  height: 20px;
+  vertical-align: middle;
 }
 
 
