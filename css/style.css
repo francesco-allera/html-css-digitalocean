@@ -218,6 +218,27 @@ nav .col-xs-4 ul li {
   opacity: 0.4;
 }
 
+.gradient-blue {
+  background-image: linear-gradient(to bottom, #0042c1 , #001E9A);
+}
+
+.main-five > .container > .row ul li {
+  display: inline-block;
+}
+
+.main-five > .container > .row ul li:first-child {
+  width: 100px;
+}
+
+.main-five > .container > .row ul li:last-child {
+  text-align: right;
+}
+
+.main-five > .container > .row ul li a:last-child {
+  text-align: right;
+}
+
+
 
 /* MEDIA QUERY MIN WIDTH 768px */
 @media screen and (min-width:768px) {
@@ -232,14 +253,15 @@ nav .col-xs-4 ul li {
     color: #031c4e;
   }
 
-  .main-three > .container > .row > [class*="col-"]::before {
-    content: "<";
-    margin-right: 3%;
+  .fa[class*="fa-chevron-"] {
+    font-size: 40px;
+    margin: 0 10px;
+    color: #031c4e;
+    vertical-align: middle;
   }
 
-  .main-three > .container > .row > [class*="col-"]::after {
-    content: ">";
-    margin-left: 3%;
+  .fa[class*="fa-chevron-"]:hover {
+    opacity: 0.5;
   }
 
 }
