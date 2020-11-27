@@ -25,6 +25,10 @@
   margin-bottom: 20px;
 }
 
+.float-right {
+  float: right;
+}
+
 h1 {
   font-size: 39px;
   font-weight: bold;
@@ -47,7 +51,7 @@ p {
   color: #fff;
 }
 
-.text-coral {
+.text-coral, .main-five>.container>.row>[class*="col-"]>ul>li:nth-child(2) {
   color: #b0c5fe;
 }
 
@@ -140,23 +144,29 @@ nav .col-xs-4 ul li {
 
 .sign-up-form button {
   color: #6b6b6b;
+  position: relative;
   background-color: transparent;
   font-size: 15px;
   font-weight: bold;
   border: none;
   box-shadow: 1px 1px 1px #ccc;
-  background-image: url("../img/sign-up.png");
+  /* background-image: url("../img/sign-up.png");
   background-size: 20px;
   background-repeat: no-repeat;
-  background-position: 2% 50%;
+  background-position: 2% 50%; */
 }
 
-/* .sign-up-form button::before {
+.sign-up-form button::before {
+  content: "";
+  position: absolute;
   background-image: url("../img/sign-up.png");
   background-size: 20px;
+  min-width: 20px;
+  height: 20px;
   background-repeat: no-repeat;
-  background-position: left center;
-} */
+  left: 10px;
+  display: block;
+}
 
 #logo-ggl {
   height: 20px;
@@ -174,7 +184,7 @@ nav .col-xs-4 ul li {
 }
 
 /* MAIN */
-.main-one, .main-three {
+.main-one, .main-three, .main-six {
   background-color: #f3f5f9;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -189,7 +199,7 @@ nav .col-xs-4 ul li {
   font-size: 16px;
 }
 
-.main-one .subs:last-child::after {
+.chevron-r::after, .main-five>.container>.row ul li a::after {
   content: ">";
   margin-left: 7px;
 }
@@ -212,6 +222,11 @@ nav .col-xs-4 ul li {
   max-width: 600px;
 }
 
+.circles-blue span {
+  width: 20px;
+  height: 20px;
+}
+
 .circles-blue span i:hover {
   background-color: #006aff;
   border-radius: 50%;
@@ -222,22 +237,37 @@ nav .col-xs-4 ul li {
   background-image: linear-gradient(to bottom, #0042c1 , #001E9A);
 }
 
+.main-five > .container > .row ul {
+  border-bottom: 1px solid;
+  padding: 10px 15px;
+}
+
 .main-five > .container > .row ul li {
   display: inline-block;
+  font-size: 16px;
 }
 
 .main-five > .container > .row ul li:first-child {
-  width: 100px;
+  width: 20%;
 }
 
 .main-five > .container > .row ul li:last-child {
-  text-align: right;
+  float: right;
 }
 
-.main-five > .container > .row ul li a:last-child {
-  text-align: right;
+.carosel {
+  background-color: #fff;
+  padding: 50px 10px;
+  border-radius: 5px;
+  width: 60%;
+  display: inline-block;
+  vertical-align: middle;
 }
 
+.carosel img {
+  max-width: 250px;
+  width: 100%;
+}
 
 
 /* MEDIA QUERY MIN WIDTH 768px */
