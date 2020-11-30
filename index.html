@@ -18,14 +18,14 @@
       <nav>
         <div class="container">
           <div class="row">
-            <div class="col-xs-3">
+            <div class="col-xs-3 col-md-2">
               <a href="#">
                 <img id="nav-logo" src="img/digital-ocean-logo.png" alt="logo">
               </a>
             </div>
 
             <!-- hamburger menu visible in xs, sm -->
-            <div class="col-xs-2 col-xs-offset-7 hidden-md hidden-lg text-right">
+            <div class="col-xs-9 hidden-md hidden-lg text-right">
               <a href="#">
                 <i id="nav-burger" class="fa fa-bars text-lightblue" aria-hidden="true"></i>
               </a>
@@ -33,18 +33,18 @@
             <!-- /hamburger menu visible in xs, sm -->
 
             <!-- ul visible in md, lg -->
-            <div class="col-xs-5 hidden-xs hidden-sm">
+            <div class="col-md-5 hidden-xs hidden-sm">
               <ul class="nopadd text-capitalize">
-                <li>products</li>
+                <li class="chev-down">products</li>
                 <li>customers</li>
-                <li>community</li>
+                <li class="chev-down">community</li>
                 <li>pricing</li>
               </ul>
             </div>
-            <div class="col-xs-4 hidden-xs hidden-sm">
-              <ul class="nopadd text-right text-capitalize">
+            <div class="col-md-5 hidden-xs hidden-sm text-right">
+              <ul class="nopadd text-capitalize">
                 <li>docs</li>
-                <li>support</li>
+                <li class="chev-down">support</li>
                 <li>login</li>
                 <li class="text-lightblue"><button id="sign-up" type="button" name="button">Sign Up</button></li>
               </ul>
@@ -77,7 +77,7 @@
                 <h3 class="text-lightblue mb-20">Get started now.</h3>
                 <input type="email" name="email" minlength="8" required placeholder="Email">
                 <input type="password" name="password" minlength="8" required placeholder="Password">
-                <input type="submit" id="create-account" value="Create your account">
+                <input type="submit" class="create-account" value="Create your account">
                 <button type="button" name="button">Sign up with google</button>
                 <div class="terms-service">
                   By signing up you agree to the <a class="text-lightblue" href="#">Terms of Service.</a>
@@ -206,12 +206,12 @@
       <!-- section 4/7 -->
       <section class="main-four padt-50">
         <div class="container">
-          <h3 class="text-darkblue text-center padb-50">The features your business needs</h3>
+          <h3 class="text-darkblue text-center mb-20">The features your business needs</h3>
           <div class="row padb-50">
             <div class="col-xs-12 col-sm-4 mt-20">
-              <img class="mb-10" src="img/icon-stacksplus.svg" alt="">
+              <img class="mb-10" src="img/predictable.png" alt="">
               <h4 class="text-darkblue font-weight-bold">Predictable pricing</h4>
-              <div class="subs mb-10">
+              <div class="subs font-weight-normal mb-10">
                 Leave complex pricing structure behind. Always know what you'll pay per mounth with a flat, industry-leading pricing structure.
               </div>
               <div class="subs text-lightblue">
@@ -219,9 +219,9 @@
               </div>
             </div>
             <div class="col-xs-12 col-sm-4 mt-20">
-              <img class="mb-10" src="img/icon-stacksplus.svg" alt="">
+              <img class="mb-10" src="img/world.png" alt="">
               <h4 class="text-darkblue font-weight-bold">World-class service</h4>
-              <div class="subs mb-10">
+              <div class="subs font-weight-normal mb-10">
                 Free round-the-clock technical support for all customers. You'll feel the love.
               </div>
               <div class="subs text-lightblue">
@@ -229,9 +229,9 @@
               </div>
             </div>
             <div class="col-xs-12 col-sm-4 mt-20">
-              <img class="mb-10" src="img/icon-stacksplus.svg" alt="">
+              <img class="mb-10" src="img/reliable.png" alt="">
               <h4 class="text-darkblue font-weight-bold">Reliable platform</h4>
-              <div class="subs mb-10">
+              <div class="subs font-weight-normal mb-10">
                 More than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services.
               </div>
               <div class="subs text-lightblue">
@@ -323,16 +323,16 @@
           <h3 class="text-darkblue padb-50">Development teams love DigitalOcean</h3>
           <i class="fa fa-chevron-left hidden-xs" aria-hidden="true"></i>
           <div class="carosel">
-            <img src="img/rockerbox.png" alt="">
-            <p class="mt-20 mb-20">"We have been able to make scaling the technical infrastructure of our business cost effective and efficient."</p>
-            <div class="subs">
+            <img class="mb-20" src="img/rockerbox.png" alt="">
+            <p class="text-grey mt-20 mb-20">"We have been able to make scaling the technical infrastructure of our business cost effective and efficient."</p>
+            <div class="subs text-darkblue">
               Rick O'Toole
             </div>
-            <div class="subs">
+            <div class="subs text-darkblue font-weight-normal">
               Co-founder and CTO
             </div>
             <div class="subs padt-50">
-              <a class="chevron-r" href="#">Read story</a>
+              <a class="chevron-r text-lightblue" href="#">Read story</a>
             </div>
           </div>
           <i class="fa fa-chevron-right hidden-xs" aria-hidden="true"></i>
@@ -347,7 +347,7 @@
 
       <!-- section 7/7 -->
       <section class="gradient-blue text-center padt-50 padb-50">
-        <h3 class="text-white">Get started now.</h3>
+        <h3 class="text-white mb-20">Get started now.</h3>
         <button type="button" class="btn-create" name="button">Create your account</button>
       </section>
       <!-- /section 7/7 -->
@@ -356,19 +356,19 @@
     <!-- /main e tuttecose -->
 
     <!-- footer e tuttecose -->
-    <footer>
+    <footer class="container-fluid">
       <div class="container padt-50 padb-50">
         <div class="row">
           <div class="col-xs-12 col-md-4">
             <img class="mb-20" src="img/digitalocean-logo-mark.svg" alt="">
-            <div class="subs">&copy; 2018 DigitalOcean, LLC. All rights reserved.</div>
-            <div class="subs">Proudly made in NY</div>
-            <div class="socials">
+            <div class="subs text-lightgrey">&copy; 2018 DigitalOcean, LLC. All rights reserved.</div>
+            <div class="subs text-grey">Proudly made in NY</div>
+            <div class="socials mt-20">
               <span><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
               <span><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></span>
               <span><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></span>
               <span><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></span>
-              <span><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></span>
+              <span><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></span>
             </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-2 mt-20 mb-20">
@@ -487,7 +487,10 @@
           </div>
         </div>
       </div>
-
+      <div id="shark" class="col-xs-6 col-md-12 clearfix">
+        <img src="img/shark.png" alt="">
+        <span>Can I help answer any question you have about DigitalOcean?</span>
+      </div>
     </footer>
     <!-- /footer e tuttecose -->
 
