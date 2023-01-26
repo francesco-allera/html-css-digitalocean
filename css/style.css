@@ -1,0 +1,445 @@
+/* common settings */
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.55;
+    letter-spacing: -0.01em;
+    padding-top: 65px;
+}
+section {
+    padding: 15px 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+h2 {
+    font-size: 2.1em;
+}
+h3 {
+    font-size: 1.75em;
+}
+h4 {
+    font-size: 1.2em;
+}
+h5 {
+    font-size: 1em;
+}
+ol, ul {
+    margin-bottom: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+p {
+    font-size: 1.33em;
+}
+a:hover {
+    text-decoration: none !important;
+}
+a.chevron::after {
+    content: ">";
+    color: #006aff;
+    font-size: 0.9em;
+    margin-left: 7px;
+}
+a.color-blue:hover {
+    color: inherit;
+    opacity: 0.7;
+}
+
+/* general classes */
+.color-blue {
+    color: #006aff;
+}
+.color-dark-blue {
+    color: #031c4e;
+}
+.color-grey {
+    color: #6f7b97;
+}
+.color-white {
+    color: #fff;
+}
+.bckgr-darkblue {
+    background: #031c4e;
+}
+.bckgr-lightgrey {
+    background: #f3f5f9;
+}
+.bckgr-gradient-blue {
+    background-image: linear-gradient(to bottom, #0042c1 , #001E9A);
+}
+.txt-up {
+text-transform: uppercase;
+}
+.subtitle {
+    font-size: 0.75em;
+}
+.p-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.chev-down::after {
+    content: "";
+    display: inline-block;
+    height: .5em;
+    width: .5em;
+    border: 2px solid;
+    border-top: 0;
+    border-left: 0;
+    transform: rotate(45deg);
+    margin: 0 0 3px 0;
+}
+
+/* navbar */
+header .my-navbar {
+    height: 65px;
+    line-height: 65px;
+    background: #fff;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    margin: 0 auto;
+    width: 100%;
+    box-shadow: rgb(3 27 78 / 10%) 0px 2px 4px;
+}
+.my-navbar #nav-logo {
+    height: 25px;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+.my-navbar i.fa {
+    font-size: 1.25em;
+}
+.my-navbar ul li {
+    display: inline-block;
+    text-transform: capitalize;
+}
+.my-navbar ul li:not(:first-child) {
+    margin-left: 15px;
+}
+.my-navbar ul li a {
+    color: #031c4e;
+}
+.my-navbar ul li a:hover {
+    color: #006aff;
+}
+.my-navbar a.sign-up-btn {
+    padding: 8px 12px;
+    line-height: inherit;
+    border: 1px solid;
+    border-radius: 5px;
+    color: #006aff;
+    font-size: 0.9em;
+}
+.my-navbar a.sign-up-btn:hover {
+    color: #fff;
+    background: #006aff;
+}
+
+/* jumbotron */
+.my-jumbotron {
+    background: url('../img/sfondo-pesci.svg');
+    background-position: center;
+    background-size: cover;
+    font-weight: 600;
+    padding: 60px 0;
+}
+.my-jumbotron h1 {
+    color:#fff;
+    font-size: 38px;
+    line-height: 1.15em;
+}
+.my-jumbotron p {
+    color: #b0c5fe;
+    font-size: 21px;
+}
+#account {
+    background: #fff;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+#account > * {
+    margin-bottom: 11.5px;
+}
+#account h2 {
+    margin: 10px 0;
+}
+#account input {
+    width: 100%;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 9px 5px;
+    margin-bottom: 11.5px;
+}
+#account :is(.account-create, .account-google) {
+    font-size: 0.9em;
+    font-weight: 600;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+#account .account-create {
+    color: #fff;
+    background: #579aff;
+}
+#account .account-google {
+    color: #6b6b6b;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: 1px 1px 2px 0px #bbb;
+    position: relative;
+}
+#account .account-google:before {
+    content: "";
+    display: block;
+    background-image: url("../img/sign-up.png");
+    position: absolute;
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+}
+.subtitle .color-blue {
+    text-decoration: underline;
+}
+
+/* main */
+main {
+    color: #5c6a88;
+}
+main h2, main h3, main h4, main h5 {
+    color: #031c4e;
+}
+
+/* section 1 */
+.section-1 h5 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.section-1 .row > [class*="col-"] {
+    height: 145px;
+    line-height: 145px;
+}
+.section-1 .row > [class*="col-"] > img {
+    width: 100%;
+    max-height: 100%;
+}
+
+/* section 2 */
+.section-2 .box {
+    height: 170px;
+}
+.section-2 p {
+    font-size: 1.33em;
+}
+.section-2 .row .col-sm-3 {
+    border-left: 2px solid #bbb;
+    margin-bottom: 15px;
+}
+.section-2 ul li {
+    font-size: 1.33em;
+    line-height: 2.33em;
+}
+.section-2 img {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+/* section 3 */
+.section-3 p {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+.section-3 .col-xs-8 {
+    height: 470px;
+}
+.section-3 img {
+    display: inline-block;
+    max-width: 85%;
+    margin-bottom: 15px;
+}
+.section-3 i.fa-chevron-left {
+    left: 0;
+}
+.section-3 i.fa-chevron-right {
+    right: 0;
+}
+
+/* section 4 */
+.section-4 img {
+    height: 48px;
+    margin-top: 25px;
+}
+.section-4 .col-xs-12 > div:last-child {
+    margin-top: 10px;
+}
+
+/* section 5 */
+.section-5 .my-table {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.section-5 .my-table .clearfix {
+    color: #a8bbe6;
+    padding: 10px 0;
+    font-size: 0.75em;
+}
+.section-5 .my-table .clearfix:not(:last-child) {
+    border-bottom: 1px solid #fff;
+}
+.section-5 .my-table .clearfix > :first-child {
+    color: #fff;
+}
+.section-5 .my-table .clearfix a.chevron,
+.section-5 .my-table .clearfix a.chevron::after {
+    color: #00d5d1;
+}
+
+/* section 6 */
+.section-6 .col-xs-8 {
+    height: 380px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    background: #fff;
+}
+.section-6 img {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+}
+.section-6 i.fa-chevron-left {
+    left: -7.5%;
+}
+.section-6 i.fa-chevron-right {
+    right: -7.5%;
+}
+.section-6 .pos-abs > div:last-child {
+    margin-top: 30px;
+}
+
+/* section 7 */
+.section-7 h2 {
+    margin-bottom: 40px;
+}
+.section-7 .my-btn {
+    padding: 12px;
+    background: #fff;
+    color: #006aff;
+    border-radius: 7px;
+}
+
+/* footer */
+footer, footer a {
+    color: #7a859d;
+}
+footer h4 {
+    color: #fff;
+}
+footer ul li {
+    margin-top: 10px;
+}
+footer .row > div {
+    margin-bottom: 20px;
+}
+footer .col-md-4 > :first-child {
+    margin-bottom: 10px;
+}
+footer .col-md-4 .darker {
+    color: #5a6887;
+}
+footer a i.fa {
+    font-size: 1.6em;
+    margin: 15px 15px 0 0;
+}
+
+/* slider */
+.pos-abs {
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.slider i.fa {
+    font-size: 2em;
+    position: absolute;
+    transform: translate(0,-50%);
+    top: 50%;
+    font-weight: bold;
+}
+.slider i.fa:hover {
+    cursor: pointer;
+}
+.slider i.fa-chevron-left:hover {
+    color: #031c4e;
+}
+
+/* shark */
+.shark {
+    position: fixed;
+    z-index: 101;
+    right: 15px;
+    bottom: 30px;
+    text-align: end;
+}
+.shark span {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 350px;
+    background: #fff;
+    padding: 4px 12px;
+    border-radius: 5px;
+    margin-right: 20px;
+    position: relative;
+    box-shadow: rgb(3 27 78 / 10%) 0px 2px 4px;
+}
+.shark span::after {
+    content: '';
+    display: inherit;
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    border: 7px solid #fff;
+    right: -7px;
+    transform: rotate(45deg);
+}
+.shark img {
+    cursor: pointer;
+}
+
+/* media querie sm */
+@media screen and (min-width: 576px) {
+    .shark {
+        right: 30px;
+    }
+}
+
+/* media query md */
+@media screen and (min-width: 768px) {
+    .section-2 .box {
+        height: 270px;
+    }
+    footer .row .col-sm-6 {
+        min-height: 400px;
+    }
+}
+
+/* media query lg */
+@media screen and (min-width: 992px) {
+    .my-jumbotron {
+        padding: 60px 0 65px;
+    }
+    .my-jumbotron h1 {
+        font-size: 3.8em;
+    }
+    .my-jumbotron p {
+        font-size: 21px;
+    }
+    .section-2 .box {
+        height: 200px;
+    }
+}
